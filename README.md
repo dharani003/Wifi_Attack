@@ -18,6 +18,7 @@ This script is an advanced wireless penetration testing tool designed for captur
 1. To scan for networks and capture handshakes, choose option `[1] Wi-Fi Offensive Scanning and Enumeration`.
 2. For initiating a DDOS attack to speed up handshake capture, choose `[2] Wi-Fi DDOS Attack`. 
 3. To crack captured handshakes, choose `[3] Decrypt Cap Files`.
+4. Have your own password file in the same directory where you download this repo.
 
 **Disclaimer:**
 This tool is intended for educational purposes and authorized penetration testing only. Using this script for illegal activities is strictly prohibited. Ensure you have explicit permission before testing any network.
