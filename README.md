@@ -1,25 +1,84 @@
-Advanced Wireless Attack Suite
+ 🚀 **Advanced Wireless Attack Suite**
 
-This script is an advanced wireless penetration testing tool designed for capturing Wi-Fi handshakes, performing DDOS attacks, and decrypting captured `.cap` files. It leverages powerful tools like `airmon-ng`, `airodump-ng`, `aireplay-ng`, and `aircrack-ng` to carry out various attacks on wireless networks.
+This Bash script is a comprehensive tool for wireless penetration testing, focusing on scanning, attacking, and decrypting Wi-Fi networks. It automates common tasks in wireless security assessments and provides an interactive, user-friendly interface with vibrant visual elements.
 
-**Features:**
-- **Wi-Fi Offensive Scanning and Enumeration**: Scans and lists available Wi-Fi networks in your vicinity. You can choose a target network and capture the handshake for further analysis.
-- **Wi-Fi DDOS Attack**: Uses `aireplay-ng` to perform a deauthentication (DDOS) attack on the target BSSID to speed up handshake capture.
-- **Cap File Decryption**: Cracks captured Wi-Fi handshakes using a wordlist for password recovery with `aircrack-ng`.
-- **Easy-to-Use Interface**: A menu-driven interface makes it simple to choose different attack methods and interact with the script.
+---
+ 🔑 **Key Features:**
 
-**Usage:**
-1. **Install Dependencies**: Make sure you have `airmon-ng`, `airodump-ng`, `aireplay-ng`, and `aircrack-ng` installed on your system.
-2. **Run as Root**: This script requires root privileges to run. Use `sudo` to run the script.
-3. **Select Attack Method**: After starting the script, choose from options like scanning for networks, performing DDOS attacks, or decrypting `.cap` files.
-4. **Monitor Mode**: If monitor mode isn't already active, the script will enable it automatically.
+1. **Wi-Fi Scanning and Enumeration:**  
+   Detect nearby wireless networks and capture handshakes for further analysis.
 
-**Instructions:**
-1. To scan for networks and capture handshakes, choose option `[1] Wi-Fi Offensive Scanning and Enumeration`.
-2. For initiating a DDOS attack to speed up handshake capture, choose `[2] Wi-Fi DDOS Attack`. 
-3. To crack captured handshakes, choose `[3] Decrypt Cap Files`.
-4. Have your own password file in the same directory where you download this repo.
+2. **Wi-Fi Deauthentication (DDoS) Attacks:**  
+   Launch deauthentication attacks on targeted BSSIDs to disconnect clients and force handshake captures.
 
-**Disclaimer:**
-This tool is intended for educational purposes and authorized penetration testing only. Using this script for illegal activities is strictly prohibited. Ensure you have explicit permission before testing any network.
+3. **Decrypt CAP Files:**  
+   Use brute-force attacks with a password dictionary to crack captured handshakes using `aircrack-ng`.
 
+4. **User-Friendly Interface:**  
+   Enjoy colorful ASCII art and enhanced user prompts, powered by `toilet`, `lolcat`, and `cowsay`.
+
+---
+
+🛠️ **Requirements:**
+
+- **Operating System:** Linux (tested on Kali Linux)
+- **Dependencies:**  
+   - `aircrack-ng`  
+   - `toilet`  
+   - `lolcat`  
+   - `cowsay`  
+   
+   Install dependencies using:
+   ```bash
+   sudo apt-get install aircrack-ng toilet lolcat cowsay figlet
+   ```
+
+---
+ 📋 **Usage Instructions:**
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/wifi-attack.git
+   cd wifi-attack-suite
+   ```
+
+2. **Make the script executable:**
+   ```bash
+   chmod +x wifi_attack.sh
+   ```
+
+3. **Run the script with root privileges:**
+   ```bash
+   sudo ./wifi_attack.sh
+   ```
+
+---
+**Example Workflow:**
+
+1. **Choose an attack method:**
+   - **[1] Wi-Fi Scanning and Enumeration:** Capture handshakes from target networks.
+   - **[2] Wi-Fi DDoS Attack:** Launch a deauthentication attack on the specified BSSID.
+   - **[3] Decrypt CAP Files:** Crack Wi-Fi passwords using a dictionary attack.
+
+2. **Follow the prompts:**  
+   Enter the network interface, BSSID, and additional details as required.
+
+3. **Monitor progress:**  
+   Outputs are displayed in real-time, and results are saved in the current directory.
+
+---
+
+ 🧠 **Important Notes:**
+
+- Ensure you run the script as **root**.
+- Use this tool **responsibly and legally**. Unauthorized access to networks is illegal.
+- Recommended for educational purposes and authorized penetration testing only.
+
+---
+
+🎨 **Special Thanks:**  
+Created with passion by **Dharani**  
+🔗 Contact: dharanishankar1234@gmail.com  
+
+--- 
+⚠️ **Disclaimer:** Use responsibly and ethically. Unauthorized use for malicious purposes is strictly prohibited.
