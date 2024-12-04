@@ -74,11 +74,7 @@ This Bash script is a comprehensive tool for wireless penetration testing, focus
 - Use this tool **responsibly and legally**. Unauthorized access to networks is illegal.
 - Recommended for educational purposes and authorized penetration testing only.
 
----
-
-🎨 **Special Thanks:**  
-Created with passion by **Dharani**  
-🔗 Contact: dharanishankar1234@gmail.com  
+---  
 
 --- 
 ⚠️ **Disclaimer:** Use responsibly and ethically. Unauthorized use for malicious purposes is strictly prohibited.
